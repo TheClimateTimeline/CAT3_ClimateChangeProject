@@ -1,1 +1,71 @@
-<h1> hi </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML</title>
+<style>
+    body, html {
+	  height: 100%;
+	  margin: 0;
+	}
+	.container {
+	  height: 100%;
+	}
+   .bg {
+      height: 50%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+
+   }
+
+   /* Adding image to each div */
+    .image1 {
+	  background-image: url("https://s3.studytonight.com/tutorials/uploads/pictures/1629719426-.jpeg");
+	}
+	.image2 {
+	  background-image: url("https://s3.studytonight.com/tutorials/uploads/pictures/1629719465-.jpeg");
+	}
+	.image3 {
+	  background-image: url("https://s3.studytonight.com/tutorials/uploads/pictures/1629719495-.jpeg");
+	}
+	.image4 {
+	  background-image: url("https://s3.studytonight.com/tutorials/uploads/pictures/1629719528-.jpeg");
+	}
+	.text {
+	   font-size: 30px;
+	   top: 30%;
+	   height: 50%;
+	   left: 30%;
+	   padding: 16px;
+	   background-color: rgba(125,145,244,0.4);
+	   color: white;
+	   width: 100%;
+	   text-align: center;
+
+	}
+</style>
+</head>
+<body>
+    <div class="container">
+		<div class="bg image1"></div>
+		<div class="text">
+		   <h3>Scroll the page </h3>
+       <img src="https://cutewallpaper.org/22/random-pictures-wallpapers/300625018.jpg" alt="Dog with duck" style="width:275px;height:275px;">
+		   <p> Image changes on scroll </p>
+		</div>
+		<div class="bg image2"></div>
+		<div class="text">
+		   <h3>Scroll the page </h3>
+		   <p> Image changes on scroll </p>
+		</div>
+		<div class="bg image3"></div>
+		<div class="text">
+		   <h3>Scroll the page </h3>
+		   <p> Image changes on scroll </p>
+		</div>
+		<div class="bg image4"></div>
+	</div>
+</body>
+</html>
