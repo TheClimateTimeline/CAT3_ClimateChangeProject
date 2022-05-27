@@ -11,15 +11,32 @@
 	  height: 100%;
 	  margin: 0;
 	}
+  .thumbnail:hover {
+    position:relative;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* transform: scale(2); */
+}
 	.container {
+    text-align:center;
 	  height: 100%;
 	}
    .bg {
       height: 50%;
-	  background-position: center;
+	  background-position: absolute;
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	  background-attachment: fixed;
+
+
+   }
+   .bg2 {
+     height: 70%;
+     background-position: absolute;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+
 
    }
 
@@ -48,19 +65,73 @@
   .image8 {
     background-image: url("https://static01.nyt.com/images/2020/01/02/world/02indonesia-new/merlin_166568655_bc424ab9-dc3e-4e1d-a53d-0e28a56b5a03-superJumbo.jpg");
   }
+  .centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 47px;
+    display: inline-block;
+    width: 100%;
 
+    /* padding: 16px; */
+    color: white;
+    }
+
+
+
+    .text_over_image {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+        color:#fff;
+        font-size: 60px;
+        height:100px;
+    }
+    .text_over_image2 {
+        position: relative;
+        margin: auto;
+        /* top: 0;
+        left:0;
+        right:0;
+        bottom:0; */
+        left: 0;
+        top: 50%;
+        color:#000066;
+        font-size: 40px;
+        height:50px;
+        padding:20px;
+        width:200px;
+        position:relative;
+        background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+        background: rgba(204, 204, 204, 0.7);
+    }
 	.text0 {
 
     font-size: 25px;
     top: 30%;
-    height: 20%;
+    height: 30%;
     left: 30%;
     padding: 16px;
     background-color: rgba(137, 236, 30, 0.13);
+
+
+
+    /* background: rgb(0, 0, 0); /* Fallback color */ */
+    /* background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */ */
     color: black;
     width: 100%;
     text-align: center;
 	}
+
+  .left {
+    position: absolute;
+    top: 50;
+    left: 16px;
+}
   .text1 {
 
     font-size: 25px;
@@ -141,34 +212,39 @@
 
 <body>
     <div class="container">
-		<div class="bg image1"></div>
+		<div class="bg2 image1"></div>
+    <div class="text_over_image">Climate Change Timeline</div>
 		<div class="text0">
-		   <h1>Climate Change Projected timeline  </h1>
-       <h3> SSP5-8.5 </h3>
+		   <h3>How we failed the world in 30 years</h3>
+       <h5> SSP5-8.5 </h5>
 		</div>
-		<div class="bg image2"></div>
+		<div class="bg image2">
+      <div class="text_over_image2">Indonesia</div>
+    </div>
 		<div class="text1">
-      <h1>2025 </h1>
+      <h3>2025 </h3>
       <p>-Slight increases to temperature. <br>
      - Small but not noticeable increase in sea level rise. <br>
      - Climate Change Organizations are still very popular. <br>
      - Climate change awareness is increasing.
      </p>
      <a href="https://dimapdemler.github.io/CAT3_ClimateChangeDiary1/"target="_blank" rel="noreferrer noopener">Diary 1 <br></a>
-     <a href="https://www.ucsd.edu/"target="_blank">
-       <img alt="Click here to open" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b96d33d8-29ee-449d-acc1-48eae4e294a9/1-moon-landing-front-page.png"
-       width="150 height="100"> </a>
+
 		</div>
-    <div class="bg image3"></div>
+    <div class="bg image3">
+      <div class="text_over_image2">Senegal</div>
+    </div>
     <div class="text2">
 		   <h1>2030 </h1>
 		   <p> West African countries already feel the effects of climate change</p>
        <a href="https://dimapdemler.github.io/CAT3_ClimateChangeDiary2/"target="_blank" rel="noreferrer noopener">Diary 2<br> </a>
        <a href="https://www.ucsd.edu/"target="_blank">
-         <img alt="Click here to open" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b96d33d8-29ee-449d-acc1-48eae4e294a9/1-moon-landing-front-page.png"
+         <img alt="Click here to open" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b96d33d8-29ee-449d-acc1-48eae4e294a9/1-moon-landing-front-page.png"class="thumbnail"
          width="150 height="210"> </a>
 		</div>
-    <div class="bg image4"></div>
+    <div class="bg image4">
+      <div class="text_over_image2">UK</div>
+    </div>
     <div class="text3">
 		   <h1>2035 </h1>
 		   <p> - Every country worldwide feeling more extreme effects of climate change. <br>
@@ -179,23 +255,31 @@
 		      - Climate change organizations are gaining more popularity. </p>
        <a href="https://dimapdemler.github.io/CAT3_ClimateChangeDiary3/"target="_blank" rel="noreferrer noopener">Diary 3</a>
 		</div>
-    <div class="bg image5"></div>
+    <div class="bg image5">
+      <div class="text_over_image2">Companies</div>
+    </div>
     <div class="text4">
 		   <h1>2040 </h1>
 		   <p> Carbon emissions from companies is continuing to rise due to the huge opportunity costs of being net zero. <br>
        Governments plans to tax companies for their emissions backfires as other countries grow economically.</p>
        <a href="https://dimapdemler.github.io/CAT3_ClimateChangeDiary4/"target="_blank" rel="noreferrer noopener">Diary 4 <br></a>
-       <a href="https://www.ucsd.edu/"target="_blank">
-         <img alt="Click here to open" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b96d33d8-29ee-449d-acc1-48eae4e294a9/1-moon-landing-front-page.png"
-         width="150 height="210"> </a>
+
 		</div>
-    <div class="bg image6"></div>
+    <div class="bg image6">
+      <div class="text_over_image2">India</div>
+    </div>
     <div class="text5">
 		   <h1>2045 </h1>
 		   <p> An increasing number of countries promise to go net zero </p>
-       <a href="https://dimapdemler.github.io/CAT3_ClimateChangeDiary5/"target="_blank" rel="noreferrer noopener">Diary 5</a>
+       <a href="https://dimapdemler.github.io/CAT3_ClimateChangeDiary5/"target="_blank" rel="noreferrer noopener">Diary 5 <br></a>
+       <a href="https://www.ucsd.edu/"target="_blank">
+         <img alt="Click here to open" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b96d33d8-29ee-449d-acc1-48eae4e294a9/1-moon-landing-front-page.png"class="thumbnail"
+         width="150 height="210"> </a>
+
 		</div>
-    <div class="bg image8"></div>
+    <div class="bg image8">
+      <div class="text_over_image2">Indonesia</div>
+    </div>
     <div class="text6">
        <h1>2050 </h1>
        <p> 	- Sea Level Rise has risen at a rate where almost all vulnerable coastal communities are being flooded. <br>
